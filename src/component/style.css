@@ -1,0 +1,30 @@
+.App-inputs {
+    margin: 1rem auto;
+    border: 2px solid darkcyan;
+    background-color: darkcyan;
+    padding: 2rem;
+}
+
+.App-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.List {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.List-item {
+    width: 30%;
+    list-style: none;
+    margin: 1rem;
+}
+
+.List-item-img {
+    height: 20vh;
+}
+
+.List-item-img img {
+    height: 100%;
+}
