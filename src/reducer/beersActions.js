@@ -4,6 +4,9 @@ export const SEARCH = 'SEARCH';
 export const FETCH_DATA = 'FETCH_DATA';
 export const FETCH_FAILED = 'FETCH_FAILED';
 export const CANCEL = 'CANCEL';
+export const RESET = 'RESET';
+export const SET_CONFIG = 'SET_CONFIG';
+export const RANDOM = 'RANDOM';
 
 export const fetchFulFilled = (beers) => {
     return {
@@ -32,6 +35,12 @@ export const search = (input) => {
     }
 }
 
+export const random = () => {
+    return {
+        type: RANDOM
+    }
+}
+
 export const fetchFailed = (message) => {
     return {
         type: FETCH_FAILED,
@@ -42,5 +51,18 @@ export const fetchFailed = (message) => {
 export const cancel = () => {
     return {
         type: CANCEL
+    }
+}
+
+export const reset = () => {
+    return {
+        type: RESET,
+    }
+}
+
+export const setConfig = (partialObject) => {
+    return {
+        type: SET_CONFIG,
+        payload: partialObject
     }
 }

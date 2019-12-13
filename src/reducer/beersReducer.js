@@ -1,4 +1,4 @@
-import { FETCH_FULFILLED, SET_STATUS, FETCH_FAILED, CANCEL } from './beersActions';
+import { FETCH_FULFILLED, SET_STATUS, FETCH_FAILED, RESET } from './beersActions';
 
 const initialState = {
     data: [],
@@ -7,7 +7,7 @@ const initialState = {
 
 export const beerReducers = (state = initialState, action) => {
     switch (action.type) {
-        case CANCEL:
+        case RESET:
             {
                 return {
                     ...state,
